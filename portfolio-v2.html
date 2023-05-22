@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo&family=Carlito&family=Dosis&family=Heebo&family=Inter&family=Karla&family=Manrope&family=Montserrat&family=Mukta&family=Nanum+Gothic&family=Nunito&family=Nunito+Sans&family=PT+Sans&family=Pathway+Extreme&family=Poppins&family=Quicksand&family=Raleway&family=Rubik&family=Source+Sans+Pro&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <title>portfolio</title>
+    
+    <style>
+        * {
+            background-color: #E5E5DB;
+            scroll-behavior: smooth;
+
+            /* margin: 0; */
+        }
+
+        #container {
+            display: flex;
+
+            background-color: #C1D4C8;
+            text-align: center;
+            justify-content: space-around;
+
+            border: #BBAD9F solid 2px;
+        }
+
+        .navItems {
+            text-align: center;
+            font-family: 'Rubik', sans-serif;
+            color: #3C312E;
+            background-color: #C1D4C8;
+
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            width: 100%;
+            height: 100%;
+        }
+
+        .navItems > a{
+            color: #3C312E;
+            background-color: #C1D4C8;
+            text-decoration: none;
+
+            padding: 10px;
+        }
+
+        #name {
+            font-size: 64px;
+            font-family: 'Poppins', sans-serif;
+
+            color: #3C312E;
+
+            margin-left: 100px;
+        }
+
+        #aboutMe {
+            font-family: 'Dosis', sans-serif;
+            text-align: end;
+
+            color: #3C312E;
+            
+            margin-right: 100px;
+        }
+
+        i {
+            font-size: 60px;
+            color: #3C312E;
+        }
+
+        .project-items {
+            /* width: 150px; */
+            display: flex;
+            flex-direction: column;
+
+            text-align: center;
+            justify-content: center;
+
+            background-color: #BBAD9F;
+            border: #C1D4C8 solid 4px;
+            padding: 10px;
+        }
+
+        .project-items>a,
+        .project-items>i {
+            background-color: #BBAD9F;
+        }
+
+        .project-items>a {
+            color: #3C312E;
+            text-decoration: none;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #projects {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+
+            margin-bottom: 30px;
+        }
+
+        #one1,
+        #six6,
+        #eleven11,
+        #sixteen16 {
+            grid-column: 1/ span 2;
+        }
+
+        #two2,
+        #seven7,
+        #twelve12,
+        #seventeen17 {
+            grid-column: 3/ span 2;
+        }
+
+        #three3,
+        #eight8,
+        #thirteen13,
+        #eighteen18 {
+            grid-column: 5/ span 2;
+        }
+
+        #four4,
+        #nine9,
+        #fourteen14,
+        #nineteen19 {
+            grid-column: 2/ span 2;
+        }
+
+        #five5,
+        #ten10,
+        #fifteen15,
+        #twenty20 {
+            grid-column: 4/ span 2;
+        }
+
+        #footerrr {
+            background-color: #3C312E;
+            width: auto;
+
+            color: #E5E5DB;
+            padding: 30px;
+            font-family: 'Rubik', sans-serif;
+
+            /* border: #BBAD9F solid 2px; */
+        }
+
+        #ref {
+            background-color: #3C312E;
+            color: #E5E5DB;
+            font-family: 'Rubik', sans-serif;
+        }
+        .project-items:hover{
+            text-shadow: #C1D4C8 2px 2px 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="container">
+            <div class="navItems">
+                <a href="#">home</a>
+            </div>
+            <div class="navItems">
+                <a href="#container">about</a>
+            </div>
+            <div class="navItems">
+                <a href="#container">contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="me">
+        <h1 id="name">
+            Luisa Rubio Alvarado
+        </h1>
+
+        <p id="aboutMe">17 year old student at BUHS and West-MEC.</p>
+    </div>
+
+    <div id="projects">
+        <div class="project-items" id="one1">
+            <i class="fi fi-rr-document"></i>
+            <a href="https://lrubioa.github.io/resume/" target="_blank">Resume</a>
+        </div>
+        <div class="project-items" id="two2">
+            <i class="fi fi-rr-calendar-days"></i>
+            <a href="https://lrubioa.github.io/calendar/" target="_blank">Calendar</a>
+        </div>
+        <div class="project-items" id="three3">
+            <i class="fi fi-rr-layout-fluid"></i>
+            <a href="https://lrubioa.github.io/grid-re/" target="_blank">Grid Example </a>
+        </div>
+        <div class="project-items" id="four4">
+            <i class="fi fi-rr-table-layout"></i>
+            <a href="https://lrubioa.github.io/flexbox-temp/" target="_blank">Flexbox Layout</a>
+        </div>
+        <div class="project-items" id="five5">
+            <i class="fi fi-rr-form"></i>
+            <a href="https://lrubioa.github.io/redball/" target="_blank">Pizza Form</a>
+        </div>
+        <div class="project-items" id="six6">
+            <i class="fi fi-rr-golf-ball"></i>
+            <a href="https://lrubioa.github.io/shell-game/" target="_blank">Shell Game</a>
+        </div>
+        <div class="project-items" id="seven7">
+            <i class="fi fi-rr-calculator"></i>
+            <a href="https://lrubioa.github.io/calculator/" target="_blank">Calculator</a>
+        </div>
+        <div class="project-items" id="eight8">
+            <i class="fi fi-rr-test"></i>
+            <a href="https://lrubioa.github.io/quiz/" target="_blank">Quiz App</a>
+        </div>
+        <div class="project-items" id="nine9">
+            <i class="fi fi-rr-arrows"></i>
+            <a href="https://lrubioa.github.io/capt-marvel/" target="_blank">CSS Transitions</a>
+        </div>
+        <div class="project-items" id="ten10">
+            <i class="fi fi-rr-graphic-style"></i>
+            <a href="https://lrubioa.github.io/svg-practice/" target="_blank">SVG</a>
+        </div>
+        <div class="project-items" id="eleven11">
+            <i class="fi fi-rs-paint-brush"></i>
+            <a href="https://lrubioa.github.io/canvas-practice/" target="_blank">Canvas</a>
+        </div>
+        <div class="project-items" id="twelve12">
+            <i class="fi fi-rr-animated-icon"></i>
+            <a href="https://lrubioa.github.io/animation/" target="_blank">Animation</a>
+        </div>
+        <div class="project-items" id="thirteen13">
+            <i class="fi fi-rr-q"></i>
+            <a href="https://lrubioa.github.io/jQuery-site/" target="_blank">jQuery</a>
+        </div>
+        <div class="project-items" id="fourteen14">
+            <i class="fi fi-rr-bags-shopping"></i>
+            <a href="https://lrubioa.github.io/home-shop/" target="_blank">E-Commerce</a>
+        </div>
+        <div class="project-items" id="fifteen15">
+            <i class="fi fi-rr-gallery"></i>
+            <a href="https://lrubioa.github.io/grid-responsive/" target="_blank">CSS Photo Gallery</a>
+        </div>
+        <div class="project-items" id="sixteen16">
+            <i class="fi fi-rr-gallery-thumbnails"></i>
+            <a href="" target="_blank">JS Todo Gallery</a>
+        </div>
+        <div class="project-items" id="seventeen17">
+            <i class="fi fi-rr-bars-filter"></i>
+            <a href="https://lrubioa.github.io/svg-filters/" target="_blank">SVG Filters</a>
+        </div>
+        <div class="project-items" id="eighteen18">
+            <i class="fi fi-rr-settings-sliders"></i>
+            <a href="https://lrubioa.github.io/css-filters/" target="_blank">CSS Filters</a>
+        </div>
+        <div class="project-items" id="nineteen19">
+            <i class="fi fi-rr-api"></i>
+            <a href="" target="_blank">API</a>
+        </div>
+        <div class="project-items" id="twenty20">
+            <i class="fi fi-rr-menu-burger"></i>
+            <a href="https://lrubioa.github.io/media-q/" target="_blank">Media Query</a>
+        </div>
+    </div>
+
+    <footer id="footerrr">
+        Uicons by <a href="https://www.flaticon.com/uicons" target="_blank" id="ref">Flaticon</a>
+    </footer>
+</body>
+
+</html>
